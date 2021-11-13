@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  connection: local
+  become: true
+
+  tasks:
+  
+    - name: install python utils
+      pip:
+        - pipenv
+        - black
+        - ipdb
